@@ -7,6 +7,8 @@ description: Look up snooker rankings, results, player profiles, live matches an
 
 Query live snooker data — rankings, results, player profiles, and more.
 
+Requires an API key from api.snooker.org.
+
 ## Script
 
 ```bash
