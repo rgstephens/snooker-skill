@@ -40,7 +40,8 @@ jobs:
         env:
           CLAWHUB_API_TOKEN: ${{ secrets.CLAWHUB_API_TOKEN }}
         run: |
+          zip -r skill.zip SKILL.md scripts/ -x "*.DS_Store"
           curl -fsSL -X POST \
-            -H "Authorization: Bearer ${CLAWHUB_API_TOKEN}" \
-            -F "file=@SKILL.md" \
+            -H "Authorization: Bearer $CLAWHUB_API_TOKEN" \
+            -F "file=@skill.zip" \
             "https://clawhub.ai/api/v1/skills"
