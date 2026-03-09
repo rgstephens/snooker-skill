@@ -44,7 +44,7 @@ jobs:
           PY_SIZE=$(wc -c < scripts/snooker.py | tr -d ' ')
           PY_SHA=$(sha256sum scripts/snooker.py | cut -d' ' -f1)
 
-          PAYLOAD=$(printf '{"slug":"snooker","displayName":"Snooker","version":"%s","changelog":"","files":[{"path":"SKILL.md","size":%s,"sha256":"%s","contentType":"text/markdown"},{"path":"scripts/snooker.py","size":%s,"sha256":"%s","contentType":"text/x-python"}]}' \
+          PAYLOAD=$(printf '{"slug":"snooker","displayName":"Snooker","version":"%s","changelog":"","tags":["snooker","sports","billiards"],"acceptLicenseTerms":true,"files":[{"path":"SKILL.md","size":%s,"sha256":"%s","contentType":"text/markdown"},{"path":"scripts/snooker.py","size":%s,"sha256":"%s","contentType":"text/x-python"}]}' \
             "$VERSION" "$SKILL_SIZE" "$SKILL_SHA" "$PY_SIZE" "$PY_SHA")
 
           curl -sSL -X POST \
