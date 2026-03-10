@@ -5,11 +5,8 @@ version: 0.2.6
 metadata:
   openclaw:
     requires:
-      env:
-        - SNOOKER_API_KEY
       bins:
         - python3
-    primaryEnv: SNOOKER_API_KEY
 ---
 
 # Snooker
