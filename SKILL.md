@@ -1,9 +1,10 @@
 ---
 name: snooker
 description: Look up snooker rankings, results, player profiles, live matches and head-to-head records via api.snooker.org.
-version: 0.3.0
+version: 0.3.1
 metadata:
   openclaw:
+    emoji: "🎱"
     requires:
       bins:
         - python3
