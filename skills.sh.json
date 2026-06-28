@@ -1,0 +1,13 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Snooker",
+      "description": "Live snooker data — rankings, results, player profiles, matches, and head-to-head records via api.snooker.org.",
+      "skills": [
+        "snooker"
+      ]
+    }
+  ]
+}
